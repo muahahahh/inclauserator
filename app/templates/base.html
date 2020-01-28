@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inclauserator!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for( 'static', filename = 'css/bootstrap.min.css') }} " >
+    <link rel="stylesheet" href="{{ url_for( 'static', filename = 'custom_css/custom.css') }} " >
+    <script src="{{ url_for('static', filename = 'jquery-3.4.1.js') }}"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-text">
+    This is Inclauserator!
+  </span>
+</nav>
+
+{% block content %}  {% endblock %}
+
+</body>
+</html>

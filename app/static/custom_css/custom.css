@@ -1,0 +1,37 @@
+
+.spacer {
+	 height: 5px
+ }
+
+#excel {
+    height: 400px;
+    width: 600px;
+}
+
+#field_name {
+    width: 600px;
+}
+
+#result {
+    height: max-content;
+    height: 400px;
+    width: 600px;
+}
+
+.inclauserator {
+    background-color: #D3E7E9;
+    width:640px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#submit {
+    width: 200px;
+}
+
+.nav-link.active {
+    background-color: #D3E7E9;
+}
+

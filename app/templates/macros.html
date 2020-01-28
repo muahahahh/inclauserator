@@ -1,0 +1,14 @@
+
+{% macro render_field(field) %}
+	{{ field(class_ ="form-control input-sm", **kwargs)|safe }}
+{% endmacro %}
+
+
+{% macro render_button(form) %}
+	{{ form(class_="btn btn-success") }}
+{% endmacro %}
+
+
+{% macro render_textarea(form) %}
+	{{ textarea(class_="form-control input-sm", **kwargs)|safe }}
+{% endmacro %}

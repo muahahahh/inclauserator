@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% from "macros.html" import render_field %}
+{% from "macros.html" import render_button %}
+{% from "macros.html" import render_textarea %}
+
+<div class = "container">
+
+<form method="POST">
+
+<div class = "spacer" > </div>
+
+
+<ul class="nav nav-tabs">
+    <li class="nav-item active">
+        <a class="nav-link active" href="#">Inclauserator</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">CaseWhenThenator</a>
+    </li>
+</ul>
+
+<div class="inclauserator">
+     <p>Inclauserator converts excel column to SQL IN-clause list .</p>
+
+    <div class="form-group row flex-v-center"  id="field_name">
+            <div class = "container">
+                {{ render_field(form.field_name, placeholder=form.field_name.label.text) }}
+            </div>
+    </div>
+
+    <div class="form-group row flex-v-center"  id="input_in">
+        <div class = "container">
+            {{ render_field(form.excel, placeholder=form.excel.label.text) }}
+        </div>
+    </div>
+
+    <div class="form-group row flex-v-center"  id="submit_in">
+            <div class = "container">
+                {{ render_button(form.submit) }}
+            </div>
+    </div>
+</div>
+
+</form>
+
+<script src="{{ url_for('static', filename = 'my_js.js') }}"></script>
+
+</div>
+{% endblock %}
