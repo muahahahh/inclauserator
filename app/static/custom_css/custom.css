@@ -3,31 +3,36 @@
 	 height: 5px
  }
 
-#excel {
+#inclause_excel, #case_when_then_inclause_excel, #insertor_excel {
     height: 400px;
-    width: 600px;
+    /*width: 600px;*/
 }
 
-#field_name {
-    width: 600px;
+#inclause_field_name, #case_when_then_pattern, #case_when_then_else {
+    /*width: 600px;*/
+    height: calc(1.5em + .75rem + 2px);
 }
 
 #result {
     height: max-content;
     height: 400px;
-    width: 600px;
+    /*width: 600px;*/
 }
 
-.inclauserator {
+#inclauserator, #casewhenthenator, #insertor{
     background-color: #D3E7E9;
-    width:640px;
+    /*width:640px;*/
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
-#submit {
+.headr {
+    padding-top: 12px;
+}
+
+#inclause_submit, #case_when_then_submit {
     width: 200px;
 }
 
