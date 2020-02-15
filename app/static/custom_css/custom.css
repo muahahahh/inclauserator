@@ -36,7 +36,8 @@
     width: 200px;
 }
 
-.nav-link.active {
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
     background-color: #D3E7E9;
+    border-bottom-color: #D3E7E9;
 }
 

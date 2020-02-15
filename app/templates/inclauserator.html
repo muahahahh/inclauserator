@@ -13,13 +13,13 @@
 
 <ul class="nav nav-tabs">
     <li class="nav-item active" id="nav_inclauserator" onclick="tabs_control('inclauserator')">
-        <a class="nav-link active" href="#">Inclauserator</a>
+        <a class="nav-link active" id="nav_link_inclauserator" href="#">Inclauserator</a>
     </li>
     <li class="nav-item" id="nav_casewhenthenator" onclick="tabs_control('casewhenthenator')">
-        <a class="nav-link" href="#">CaseWhenThenator</a>
+        <a class="nav-link"  id="nav_link_casewhenthenator" href="#">CaseWhenThenator</a>
     </li>
     <li class="nav-item" id="nav_insertor" onclick="tabs_control('insertor')">
-        <a class="nav-link" href="#">Insertor</a>
+        <a class="nav-link" id="nav_link_insertor" href="#">Insertor</a>
     </li>
 </ul>
 <div id="tabs">
@@ -49,7 +49,10 @@
 
     <form method="POST">
     <div class="tab" id="casewhenthenator" style="visibility: hidden">
-         <p class="headr">CaseWhenThenator converts pasted tab-separated columns to Case clause</p>
+         <p class="headr">CaseWhenThenator converts pasted tab-separated columns to Case clause.<br>
+             Pattern should represent single line WHEN statement, where digit <i><b>n</b></i> after word <i>col</i>
+         is sequential number of column in pasted data, counting from left. First column number is 1.</p>
+
 
         <div class="form-group row flex-v-center"  id="field_name">
                 <div class = "container">
@@ -101,7 +104,7 @@
     </div>
     </form>
 </div>
-<script src="{{ url_for('static', filename = 'my_js.js') }}"></script>
+<script src="{{ url_for('static', filename = 'inclauserator_front.js') }}"></script>
 
 </div>
 {% endblock %}
